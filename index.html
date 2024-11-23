@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="heading">My Library</h1>
+    <button class="add-new-book">Add Book</button>
+    <div class="form-add-book">
+        <dialog id="dialog">
+            <form method="dialog">
+                <div class="book-name">
+                    <label for="book-name">Book name:</label>
+                    <input type="text" id="book-name" name="book-name" required>
+                </div>    
+                <div class="author-name">
+                    <label for="author-name">Author:</label>
+                    <input type="text" id="author-name" name="author-name" required>
+                </div>
+                <div class="page-number">
+                    <label for="page-number">Numbers of page:</label>
+                    <input type="text" id="page-number" name="page-number" required>
+                </div>
+                <div class="book-cover">
+                    <label for="book-cover">Path to cover image:</label>
+                    <input type="text" id="book-cover" name="book-cover">
+                </div>
+                <div class="finish-reading">
+                    <label for="finish-reading">Have you read it?</label>
+                    <input type="checkbox" id="finish-reading" name="finish-reading">
+                </div>
+                <div class="confirm-cancel">
+                    <button class="confirm">Confirm</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+    <div class="book-shelf">
+        <!-- <div class="book1">
+            
+        </div>
+        <div class="book2">
+
+        </div>
+        <div class="book3">
+
+        </div>
+        <div class="book4">
+
+        </div> -->
+    </div>
+    
+</body>
+</html>

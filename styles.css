@@ -1,0 +1,153 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  @font-face { 
+    font-family: 'Harmony'; 
+    src: url('./fonts/HarmonyOS_Sans_Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Harmony';
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  h1.heading {
+    margin: 30px;
+  }
+
+  .add-new-book {
+    margin-left: 30px;
+    border: 0;
+    border-radius: 8px;
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+  }
+
+  .add-new-book:hover {
+    background-color: rgb(184, 184, 184);
+  }
+
+  .book-shelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,200px));
+    gap: 50px;
+    margin: 30px;
+    position: relative;
+  }
+
+  .book-shelf > div {
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+  }
+
+  .book-shelf img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .book-shelf .remove-button {
+    width: 10px;
+    height: 10px;
+    background-color: #F6F7F8;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+
+  .book1 {
+
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .form-add-book {
+    position: relative;
+  }
+
+  #dialog {
+    width: max(30%,300px);
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  form > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .confirm-cancel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .confirm-cancel button {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px 20px;
+    color: black;
+    background-color: white;
+  }
+
+  .confirm-cancel button:hover {
+    color: white;
+    background-color: black;
+  }
+
+  
